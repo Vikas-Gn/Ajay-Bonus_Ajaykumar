@@ -743,7 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('http://44.223.23.145:3430/api/bonus', {
+            const response = await fetch('http://3.109.47.88:3062/api/bonus', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -787,7 +787,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (month) params.append('month', month);
             if (year) params.append('year', year);
 
-            const url = `http://44.223.23.145:3430/api/bonus/history?${params.toString()}`;
+            const url = `http://3.109.47.88:3062/api/bonus/history?${params.toString()}`;
             const response = await fetch(url);
 
             if (!response.ok) {
